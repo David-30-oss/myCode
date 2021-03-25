@@ -4,289 +4,409 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../BLOSSOM/css/all.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/styles.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/bootstrap.css">
-    <link rel="stylesheet" href="../BLOSSOM/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BUKSTUR/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tf
+    sghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../BUKSTUR/css/bootstrap.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qb
+  sMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="../BUKSTUR/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BUKSTUR/css/styles.css">
+  
+    <title>BUKSTUR</title>
     
-    <title>BLOSSOM</title>
 </head>
-<body>
- <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-     <div class="container">
-         <a href="index.html" class="navbar-brand display-3">BLOSSOM</a>
-         <button class="navbar-toggler" data-toggle="collapse" data-target="#NavbarCollapse">
-             <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="NavbarCollapse">
-                <ul class="navbar-nav ml-auto  ">
-                    <li class="nav-item active ">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item ">
-                            <a href="Contact.html" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item ">
-                                <a href="About Us.html" class="nav-link">About Us</a>
-                            </li>
-                        <li class="nav-item ">
-                                <a href="Service.html" class="nav-link">Service</a>
-                            </li>
-                            <li class="nav-item ">
-                                    <a href="Blog.html" class="nav-link">Blog</a>
-                                </li>
-                </ul>
-         </div>
-     </div>
- </nav>
-<!--SHOWCASE SLIDER-->
-<section id="showcase">
-   <div id="mycarousel" class="carousel slide" data-ride="carousel">
-       <ol class="carousel-indicators">
-           <li class="active" data-target="#mycarousel" data-slide-to="o"></li>
-           <li data-target="#mycarousel" data-slide-to="1"></li>
-           <li data-target="#mycarousel" data-slide-to="2"></li>
-       </ol>
+<body data-spy="scroll" data-target="#main-nav" id="home">
 
-       <!--CAROUSEL CLASSES-->
-       <div class="carousel-inner">
-           <div class="carousel-item active carousel-img1">
-              <div class="container">
-                  <div class="carousel-caption d-none d-sm-block text-right mb-5">
-                      <h1 class="display-3">Heading one</h1>
-                      <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                          Dolorem voluptatem perspiciatis sint similique mollitia officiis.
-                        </p>
-                        <a href="" class="btn btn-primary btn-lg">sign up now</a>
-                  </div>
+  <!--Start Here-->
+  <!--NAVIGATION STARTS HERE-->
+  <nav class="navbar navbar-expand-md  navbar-light fixed-top py-0" id="main-nav">
+    <div class="container">
+    <a href="#" class="navbar-brand">
+      <img src="../BUKSTUR/img/logo.jpg" alt="" width="120" height="120">
+    </a>
+    <!--COLLAPSE CLASS AND HARMBUGER -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#NavbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="NavbarCollapse" class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="#Home" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+              <a href="#Authors" class="nav-link">Meet Our Authors</a>
+            </li>
+            <li class="nav-item">
+                <a href="#Contacts" class="nav-link">Contact</a>
+              </li>
+      </ul>
+    </div>
+    </div>
+  <!--NAVIGATION ENDS HERE-->
+  </nav>
+    
+  <section id="showcase" class="py-5 " >
+      <div class="dark-overlay text-white">
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-6 text-center">
+              <h1 class="display-2 mt-4 pt-4">Let your mind <strong>capture</strong> it</h1>
+              <p class="lead pt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus repudiandae beatae quod </p>
+              <a href="" class="btn btn-dark btn-large text-white">
+                <i class="fas fa-arrow-right"></i>pick a book</a>
+            </div>
+            <div class="col-lg-6">
+              <img src="../BUKSTUR/img/cover.jpg" alt="" class="img-fluid  d-none d-lg-block my-5" ><!--d-none d-lg means it should only display when its large-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  <!--NEWSLETTER-->
+
+  <section id="newsletter" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control form-control-lg mb-resp" placeholder="Enter Name">
+        </div>
+        <div class="col-md-4">
+          <input type="email" class="form-control form-control-lg mb-resp" placeholder="Enter Email">
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary btn-block btn-lg">
+            <i class="fas fa-envelope-open-o"></i> Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--BOXES-->
+  <section id="boxes" class="py-5">
+    <div class="container">
+      <div class="row">
+        <!--Start of the boxes-->
+        <div class="col-lg-3">
+          <div class="card text-center border-primary mb-resp">
+            <div class="card-body">
+            <h3 class="text-primary">Be Smarter</h3>
+            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur eum fuga sit tempora, eius in!.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center  mb-resp">
+                <div class="card-body bg-primary">
+                <h3 class="text-white">Be Better</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur eum fuga sit tempora, eius in!.</p>
               </div>
-           </div>
-           <div class="carousel-item carousel-img2">
-                <div class="container">
-                    <div class="carousel-caption d-none d-sm-block text-center mb-5">
-                        <h1 class="display-3">Heading two</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Dolorem voluptatem perspiciatis sint similique mollitia officiis.
-                          </p>
-                          <a href="" class="btn btn-warning btn-lg">sign up now</a>
-                    </div>
-                </div>
-             </div>
-             <div class="carousel-item carousel-img3">
-                    <div class="container">
-                        <div class="carousel-caption d-none d-sm-block text-left mb-5">
-                            <h1 class="display-3">Heading three</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Dolorem voluptatem perspiciatis sint similique mollitia officiis.
-                              </p>
-                              <a href="" class="btn btn-success btn-lg">sign up now</a>
-                        </div>
-                    </div>
-                 </div>
-       </div>
-       <!--CAROUSELSLIDE WITH CONTROL-->
-       <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
-           <span class="carousel-control-prev-icon"></span>
-       </a>
-       <a href="#mycarousel" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-   </div>
-</section>
-
-<!--HOME SECTION-->
-<section id="home-icons" class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 mb-4 text-center text-muted bg-light">
-                <i class="fas fa-cog fa-3x mb-2"></i>
-                <h3>Gearing Up</h3>
-                <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                    Aut architecto eligendi optio distinctio recusandae voluptas.</p>
-            </div>
-            <div class="col-md-4 mb-4 text-center text-white bg-warning">
-                    <i class="fas fa-cloud fa-3x mb-2"></i>
-                    <h3>Sending Data</h3>
-                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Aut architecto eligendi optio distinctio recusandae voluptas.</p>
-            </div>
-            <div class="col-md-4 mb-4 text-center text-muted bg-light">
-                    <i class="fas fa-cart-plus fa-3x mb-2"></i>
-                    <h3>Closing Up</h3>
-                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                        Aut architecto eligendi optio distinctio recusandae voluptas.</p>
-            </div>
+              </div>
         </div>
-    </div>
-</section>
-
-<!--HOME HEADING SECTION WITH OVERLAY-->
-<section id="home-heading" class="p-5">
-    <div class="dark-overlay">
-        <div class="row">
-            <div class="col">
-                <div class="container pt-5 text-center text-white">
-                    <h1>Are you ready to get started</h1>
-                    <p class="d-none d-md-block text-white">Lorem ipsum, dolor sit amet consectetur adipisicing
-                         elit. Consequatur corrupti ipsa incidunt, fuga quod veritatis?</p>
-                </div>
-            </div>
+        <div class="col-md-3">
+            <div class="card text-center border-primary mb-resp">
+                <div class="card-body">
+                <h3 class="text-primary">Be Faster</h3>
+                <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur eum fuga sit tempora, eius in!.</p>
+              </div>
+              </div>
         </div>
-    </div>
-</section>
-
-<!--INFO SECTION-->
-<section id="home-info py-3">
-    <div class="container">
-        <div class="row">
-            <!--ALIGN SELF CHANGES POSITION -->
-            <div class="col-md-6 align-self-center">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Laboriosam quaerat labore, corporis voluptatum quis 
-                consectetur doloremque provident numquam nobis in?
-            </p>
-            <a href="about.html" class="btn btn-outline-warning btn-lg">Learn more</a>
-            </div>
-            <div class="col-md-6">
-                <img src="../BLOSSOM/img/laptop.png" alt="" class=" img-fluid">
-            </div>
+        <div class="col-md-3">
+            <div class="card text-center ">
+                <div class="card-body bg-primary">
+                <h3 class="text-white">Be Greater</h3>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur eum fuga sit tempora, eius in!.</p>
+              </div>
+              </div>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<!--VIDEO SECTION-->
-<section id="home-video">
-    <div class="container">
-    <div class="dark-ovevrlay">
-    <div class="row">
-        <div class="col">
-           <div class="img">
-               <div class="img-vid text-center text-dark py-5">
-                   <a href="#">
-                   <i class="fas fa-play fa-3x "></i>
-                </a>
-                   <h1>Seen our video yet</h1>
-               </div>
-           </div>
-        </div>
-    </div>
-    </div>
-</div>
-</section>
+  <!--WHY section/ ABOUT-->
 
-<!--PHOTO GALLERY-->
-<section id="gallery">
-    <div class="container gallery-color pb-5">
-        <h1 class="display-3 text-dark text-center py-3">PHOTO GALLERY</h1>
-        <p class="text-center">Check out our photos</p>
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <a href="">
-                    <img src="../BLOSSOM/img/media.jpg" alt="" class="img-fluid" height="560px" width="560px">
-                </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="">
-                        <img src="../BLOSSOM/img/lights.jpg" alt="" class="img-fluid" height="560px" width="560px">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                        <a href="">
-                            <img src="../BLOSSOM/img/laptop.png" alt="" class="img-fluid" height="560px" width="560px">
-                        </a>
-                    </div>
-            
-        </div>
-        <div class="row mb-4">
-                <div class="col-md-4">
-                    <a href="">
-                        <img src="../BLOSSOM/img/image1.jpg" alt="" class="img-fluid" height="560px" width="560px">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                        <a href="">
-                            <img src="../BLOSSOM/img/laptop.png" alt="" class="img-fluid" height="560px" width="560px">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                            <a href="">
-                                <img src="../BLOSSOM/img/lights.jpg" alt="" class="img-fluid" height="560px" width="560px">
-                            </a>
-                        </div>
-                
-            </div>
-    </div>
-</section>
-
- <!--NEWSLETTER SECTION-->
- <section id="newsletter" class="text-center bg-dark text-white py-5">
-     <div class="container">
+  <section id="About" class="text-center py-5 ">
+   <div class="container">
      <div class="row">
-         <div class="col-md">
-             <h1 class="display-4">Sign up for our Newsletter</h1>
-            <p class="muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Eius magnam quod provident quam sit ut fugiat a, nisi facere 
-                laudantium voluptates suscipit voluptatibus qui in sequi, aliquam eaque veniam vero!
-            </p>
-            <form action="" class="form-inline justify-content-center py-5">
-                <div class="d-flex">
-                    <div class="align-self-start">
-                        <i class="fas fa-check fa-2x mx-5 bg-primary p-1"></i>
+       <div class="col">
+         <div class="info-header">
+         <h3 class="text-primary">WHY YOU NEED TO READ?</h3>
+         <p class="text-muted my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nihil dolorem totam ips
+           um ab quis eius modi obcaecati blanditiis quam! Laborum nihil dolorem totam ips
+           um ab quis eius modi obcaecati blanditiis quam!</p>
+           
+          </div>
+
+          <!--ACCORDION-->
+          <div id="accordion">
+            <div class="card mt-4 ">
+              <div class="card-header">
+                <h5 class="mb-0">
+                  <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
+                    <i class="fas-fa-arrow-circle-down"></i>Get Inspired
+                  </div>
+                </h5>
+              </div>
+
+                 <div id="collapse1" class="collapse show">
+                   <div class="card-body">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia asperiores vel obcaecati maiores labore quo ducim
+                     us maxime harum, molestias ea quis culpa non dolor corporis. Pariatur quam repudiandae doloribus recusandae maiores
+                      itaque nihil enim modi, veniam asperiores ea quis. Labore commodi eius iste rerum enim laudantium sint molestias ab! 
+                   </div>
+                 </div>
+
+            </div>
+            
+            <div class="card mt-0 ">
+                <div class="card-header">
+                  <h5 class="mb-0">
+                    <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
+                      <i class="fas-fa-arrow-circle-down"></i>Be Motivated
                     </div>
-                    <div class="align-self-end"> 
-                        <input type="text" class="form-control-lg form-control" placeholder="name">
+                  </h5>
+                </div>
+  
+                   <div id="collapse2" class="collapse ">
+                     <div class="card-body">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia asperiores vel obcaecati maiores labore quo ducim
+                       us maxime harum, molestias ea quis culpa non dolor corporis. Pariatur quam repudiandae doloribus recusandae maiores
+                        itaque nihil enim modi, veniam asperiores ea quis. Labore commodi eius iste rerum enim laudantium sint molestias ab! 
+                     </div>
+                   </div>
+  
+              </div>
+
+              <div class="card mt-0 ">
+                  <div class="card-header">
+                    <h5 class="mb-0">
+                      <div href="#collapse3" data-toggle="collapse" data-parent="#accordion">
+                        <i class="fas-fa-arrow-circle-down"></i>Be Relentless
+                      </div>
+                    </h5>
+                  </div>
+    
+                     <div id="collapse3" class="collapse ">
+                       <div class="card-body">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia asperiores vel obcaecati maiores labore quo ducim
+                         us maxime harum, molestias ea quis culpa non dolor corporis. Pariatur quam repudiandae doloribus recusandae maiores
+                          itaque nihil enim modi, veniam asperiores ea quis. Labore commodi eius iste rerum enim laudantium sint molestias ab! 
+                       </div>
+                     </div>
+    
+                </div>
+                <!--END OF THE CARD-->
+          </div>
+       </div>
+     </div>
+   </div>
+  </section>
+
+  <!--MEET THE AUTHORS-->
+  <section id="Authors"class="text-center py-5 ">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header">
+            <h3 class="text-primary">MEET OUR AUTHORS</h3>
+            <p class=" text-muted my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nihil dolorem totam ips
+              um ab quis eius modi obcaecati blanditiis quam! Laborum nihil dolorem totam ips
+              um ab quis eius modi obcaecati blanditiis quam!</p>
+              
+             </div>
+             </div>
+             </div>
+             <div class="row">
+               <div class="col-lg-3 col-md-6">
+                 <div class="card my-5 text-center ">
+                   <img src="img/person1.jpg" alt="" class="img-fluid rounded-circle w-50 m-auto" >
+                     <div class="card-body">
+                         <h3 class="mt-3">Susan Peters</h3>
+                         <h5 class="text-muted">Lead writer</h5>
+                         <p class="mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, arch
+                           itecto itaque dolorem expedita officiis repellendus!</p>
+                           <div class="d-flex justify-content-center">
+                             <div class="p-4">
+                              <a href="http://facebook.com">
+                              <i class="fas-fa-facebook"></i>
+                              </a>
+                             </div>
+                             <div class="p-4">
+                                <a href="http://twitter.com">
+                                  <i class="fas-fa-twittter"></i>
+                                  </a>
+                             </div>
+                             <div class="p-4">
+                                <a href="http://linkedln.com">
+                                  <i class="fas-fa-linkedln"></i>
+                                  </a>
+                             </div>
+                           </div>
+                     </div>
+                 </div>
+               </div>
+               <div class="col-lg-3 col-md-2">
+                <div class="card my-5 text-center text-white bg-primary">
+                  <img src="img/person2.jpg" alt="" class="img-fluid rounded-circle w-50 m-auto">
+                    <div class="card-body">
+                        <h3 class="mt-3">Jerry Coil</h3>
+                        <h5 class="text-muted">Editor</h5>
+                        <p class="mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, arch
+                          itecto itaque dolorem expedita officiis repellendus!</p>
+                          <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                             <a href="http://facebook.com">
+                             <i class="fas-fa-facebook"></i>
+                             </a>
+                            </div>
+                            <div class="p-4">
+                               <a href="http://twitter.com">
+                                 <i class="fas-fa-twittter"></i>
+                                 </a>
+                            </div>
+                            <div class="p-4">
+                               <a href="http://linkedln.com">
+                                 <i class="fas-fa-linkedln"></i>
+                                 </a>
+                            </div>
+                          </div>
                     </div>
                 </div>
-                <div class="d-flex mt-2">
-                        <div class="align-self-start">
-                            <i class="fas fa-check fa-2x mx-5 bg-primary p-1"></i>
-                        </div>
-                        <div class="align-self-end"> 
-                            <input type="password" class="form-control-lg form-control" placeholder="password">
-                        </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                <div class="card my-5 text-center ">
+                  <img src="img/person3.jpg" alt="" class="img-fluid rounded-circle w-50 m-auto">
+                    <div class="card-body">
+                        <h3 class="mt-3">Almond Sac</h3>
+                        <h5 class="text-muted">Novelist</h5>
+                        <p class="mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, arch
+                          itecto itaque dolorem expedita officiis repellendus!</p>
+                          <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                             <a href="http://facebook.com">
+                             <i class="fas-fa-facebook"></i>
+                             </a>
+                            </div>
+                            <div class="p-4">
+                               <a href="http://twitter.com">
+                                 <i class="fas-fa-twittter"></i>
+                                 </a>
+                            </div>
+                            <div class="p-4">
+                               <a href="http://linkedln.com">
+                                 <i class="fas-fa-linkedln"></i>
+                                 </a>
+                            </div>
+                          </div>
                     </div>
-            </form>
-            <a href="#" class="btn btn-success btn-lg py-2">Sign up Now</a>
-         </div>
-     </div>
-     </div>
- </section>
-
- <!--FOOTER-->
- <footer id="main-footer" class="py-3 text-white text-center">
-     <div class="container">
-         <div class="row">
-             <div class="col">
-                 <p>Copyright &copy;
-                     <span id="year"></span>
-                     Blossom
-                 </p>
+                </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                <div class="card my-5 text-center text-white bg-primary ">
+                  <img src="img/person4.jpg" alt="" class="img-fluid rounded-circle w-50 m-auto">
+                    <div class="card-body">
+                        <h3 class="mt-3">jack hughs</h3>
+                        <h5 class="text-muted">Lead Writer</h5>
+                        <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, arch
+                          itecto itaque dolorem expedita officiis repellendus!</p>
+                          <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                             <a href="http://facebook.com">
+                             <i class="fas-fa-facebook"></i>
+                             </a>
+                            </div>
+                            <div class="p-4">
+                               <a href="http://twitter.com">
+                                 <i class="fas-fa-twittter"></i>
+                                 </a>
+                            </div>
+                            <div class="p-4">
+                               <a href="http://linkedln.com">
+                                 <i class="fas-fa-linkedln"></i>
+                                 </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+               </div>
              </div>
+             </div>
+
+             
+
+  </section>
+
+  <!--CONTACT-->
+  <section id="Contacts" class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>Get in touch</h3>
+          <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, temporibus.</p>
+          <form action="" class="form-group">
+            <input type="text" class="form-control form-control-lg" placeholder="Name">
+          </form>
+          <form action="" class="">
+            <input type="Email" class="form-control form-control-lg" placeholder="Email">
+          </form>
+          <form action="">
+            <textarea name=""  rows="10" class="form-control form-control-lg mt-3" placeholder="message"></textarea>
+            <input type="submit" value="submit" class="btn btn-primary btn-block btn-lg">
+          </form>
+        </div>
+        <div class="col-lg-3 align-self-end">
+          <img src="img/logo.jpg" alt="" class="img-fluid ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer id="main-footer"class="py-5 bg-dark text-white">
+     <div class="container">
+       <div class="row text-center">
+         <div class="col md-6 ml-auto">
+           <p class="lead">
+           copyright &copy; <span id="year"></span>
+          </p>
          </div>
+       </div>
      </div>
- </footer>
+  </footer>
+  
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NM
+    ZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous">
+    </script>
+
+    <!-- FIND THE ROOT FOLDER USING .... -->
+    <script src="../BUKSTUR/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script src="../BUKSTUR/js/bootstrap.bundle.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyY
+    mZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous">
+    </script>
+    <script src="../BUKSTUR/js/bootstrap.bundle.min.js"></script>
+    <script src="../BUKSTUR/js/bootstrap.js"></script>
+    <script src="../BUKSTUR/js/bootstrap.min.js"></script>
     
 
-<!--javascript-->
-    <script src="../BLOSSOM/jquery-3.3.1.min.js"></script>
-    <script src="../BLOSSOM/js/bootstrap.bundle.js"></script>
-    <script src="../BLOSSOM/js/bootstrap.bundle.min.js"></script>
-    <script src="../BLOSSOM/js/bootstrap.js"></script>
-    <script src="../BLOSSOM/js/bootstrap.min.js"></script>
-    <script>
-        //GET CURRENT YEAR OF COPYRIGHT
-    $('#year').text(newDate().getFullYear());
+      <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+      </script>
 
-        //CONFIGURE SLIDER
-    $('.carousel').carousel({
-
-        interval:4000,
-        pause:'hover',
-    })    
-    </script>
 </body>
 </html>
